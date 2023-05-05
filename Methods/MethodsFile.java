@@ -5,12 +5,14 @@
 // every file in Java is a class
 // --> every function is a method
 
+import java.util.Date;
+
 Class MethodsFile {
     public String greeter(String name, Date date){
-        return "Hello World!" + date;
+        return "Hello world!" + date;
     }
     public String greeter(String name){
-        return "Hello World!";
+        return "Hello world!";
     }
 }
 // METHOD SIGNATURE = methodName(parameters)
