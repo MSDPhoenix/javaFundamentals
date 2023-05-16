@@ -7,7 +7,7 @@
 
 import java.util.Date;
 
-Class MethodsFile {
+class MethodsFile {
     public String greeter(String name, Date date){
         return "Hello world!" + date;
     }

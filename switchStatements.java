@@ -29,6 +29,7 @@ switch(day){
             break;
         case 7;
             System.out.println("Sunday");
+            break
         default:
             System.out.println("There are only sevn days in a week...");
 }

@@ -9,5 +9,5 @@ boolean isRaining = true;
 if(isRaining){
     System.out.println("Bring an umbrella.");
 } else {
-    System.out.println("Have fun!")
+    System.out.println("Have fun!");
 }
