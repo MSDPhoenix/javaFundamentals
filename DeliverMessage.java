@@ -1,8 +1,10 @@
-import java.util.ArrayList;
+import java.util.Random;
+
+class OutOfGasException extends Exception{};
 
 public class DeliverMessage{
     public static void main(String[] args){
-        ArrayList<Object> friend = new ArrayList<Object>();
+        UnreliableFriend friend = new UnreliableFriend();
         try{
             friend.deliverMessage();
             System.out.println("The message was delivered!");
@@ -12,3 +14,14 @@ public class DeliverMessage{
         } 
     }
 }
+class UnreliableFriend {
+    public boolean deliverMessage() throws OutOfGasException{
+        Random r = new Random();
+        boolean hasGas = r.nextBoolean();
+        if (hasGas){
+            return true;
+        }
+        throw new OutOfGasException();
+    }
+}
+
