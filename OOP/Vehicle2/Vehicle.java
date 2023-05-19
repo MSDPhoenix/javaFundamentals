@@ -1,4 +1,5 @@
 // METHOD OVERLOADING
+// = DEFINING NEW METHOD SIGNATURES FOR SAME METHOD NAME
 
 class Vehicle {
     private int numberOfWheels;
