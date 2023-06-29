@@ -6,7 +6,7 @@ public class CappuccinoMaker extends CoffeeMaker {
         this.milk = "whole";
     }
 
-    public void makeCappuccino(String beans){
+    public void brew(String beans){
         super.brew(beans);
         System.out.println("Smooth.");
     }
